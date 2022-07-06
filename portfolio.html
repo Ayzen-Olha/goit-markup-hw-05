@@ -16,8 +16,8 @@
         href="./css/style.css">
     
 </head>
-<body>
 
+<body>
     <!--Шапка сайту-->
         <header class="page-header">
             <div class="header-nav container">
@@ -54,7 +54,8 @@
 
     <!--Унікальний контекст-->
     <main>
-        <!-- <h1>Портфолио</h1> -->
+        <h1 class="visually-hidden">Портфолио</h1>
+        
         <section class="section">
             <div class="container">
                 <ul class="filter-nav list">
@@ -78,68 +79,75 @@
 
             <div class="container">
                 <ul class="filter-main list">
-                    <li class="pic">
-                        <img src="./images/Технокряк.jpg" 
-                            width="370" alt="веб-сайт: Технокряк">
-                        <div class="text">
+                    <li class="filter-list">
+                        <div class="filter-img">
+                            <img src="./images/Технокряк.jpg" width="370" alt="веб-сайт: Технокряк">
+                        
+                            <div class="overlay-filter"> 
+                                <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p> 
+                            </div>
+                        </div>
+
+                        <div class="filter-text">
                             <h2 class="title">Технокряк</h2>
                             <p>Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="pic">
+                    <li class="filter-list">
                         <img src="./images/Постер_New_Orlean_vs_Golden_Star.jpg" 
                             width="370"
                             alt="дизайн: постер New Orlean vs Golden Star">
-                        <div class="text">
+                        <div class="filter-text">
                             <h2 class="title">Постер New Orlean vs Golden Star</h2>
                             <p>Дизайн</p>
                         </div>
                     </li>
-                    <li class="pic">
+                    <li class="filter-list">
                         <img src="./images/Ресторан_Seafood.jpg" width="370" alt="Приложение: Ресторан Seafood">
-                        <div class="text">
+                        <div class="filter-text">
                             <h2 class="title">Ресторан Seafood</h2>
                             <p>Приложение</p>
                         </div>
                     </li>
-                    <li class="pic">
+                    <li class="filter-list">
                         <img src="./images/Проект_Prime.jpg" width="370" alt="Маркетинг: Проект Prime">
-                        <div class="text">
+                        <div class="filter-text">
                             <h2 class="title">Проект Prime</h2>
                             <p>Маркетинг</p>
                         </div>
                     </li>
-                    <li class="pic">
+                    <li class="filter-list">
                         <img src="./images/Проект_Boxes.jpg" width="370" alt="приложение: Проект Boxes">
-                        <div class="text">
+                        <div class="filter-text">
                             <h2 class="title">Проект Boxes</h2>
                             <p>Приложение</p>
                         </div>
                     </li>
-                    <li class="pic">
+                    <li class="filter-list">
                         <img src="./images/Inspiration_has_no_Borders.jpg" width="370" alt="веб-сайт: Inspiration has no Borders">
-                        <div class="text">
+                        <div class="filter-text">
                             <h2 class="title">Inspiration has no Borders</h2>
                             <p>Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="pic">
+                    <li class="filter-list">
                         <img src="./images/Издание_Limited_Edition.jpg" width="370" alt="Дизайн: Издание Limited Edition">
-                        <div class="text">
+                        <div class="filter-text">
                             <h2 class="title">Издание Limited Edition</h2>
                             <p>Дизайн</p>
                         </div>
                     </li>
-                    <li class="pic">
+                    <li class="filter-list">
                         <img src="./images/Проект_LAB.jpg" width="370" alt="Маркетинг: Проект LAB">
-                        <div class="text">
+                        <div class="filter-text">
                             <h2 class="title">Проект LAB</h2>
                             <p>Маркетинг</p>
                         </div>
                     </li>
-                    <li class="pic">
+                    <li class="filter-list">
                         <img src="./images/Growing_Business.jpg" width="370" alt="Приложение: Growing Business">
-                        <div class="text">
+                        <div class="filter-text">
                             <h2 class="title">Growing Business</h2>
                             <p>Приложение</p>
                         </div>
@@ -153,9 +161,8 @@
         <footer class="footer">
             <div class="container footer-main">
                 <div class="fotter-container">
-                    <a href="./index.html">
-                        <img class="logo" src="./images/logo_footer.svg" alt="WebStudio">
-                    </a>
+                    <a href="./index.html" lang="us" class="logo-link logo"> Web<span class="studio-footer">Studio</span></a>
+
                     <address class="address">
                         <a class="link-white" href="#">г. Киев, пр-т Леси Украинки, 26</a>
                         <a class="link" href="mailto:info@example.com">info@example.com</a>
@@ -163,8 +170,8 @@
                     </address>
                 </div>
                 
-                <div class="container connection">
-                    <h3 class="title">присоединяйтесь</h3>
+                <div class="connection">
+                    <h3 class="connection-title">присоединяйтесь</h3>
                     <ul class="connection-list list">
                         <li class="connection-items">
                             <a href="#" class="icon-inst-link">
